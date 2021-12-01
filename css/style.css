@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: tahoma, arial, sans-serif, 'lucida grande';
+}
+
+a{
+    text-decoration: none;
+    color: #696969;
+}
+a:hover{
+    color: #adad90;
+}
+
+p{
+    font-size: 18px;
+}
+a:hover, a:hover p{
+    color: #818753;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+
+/* menu  */
+.menu{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu ul li{
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.menu img{
+    margin: 0px 15px -20px;
+
+}
+
+.menu img:hover{
+    opacity: 0;
+}
+
+.menu__item a:hover{
+    color: #383131;
+}
+
+/* slice  */
+.slice{
+    margin-top: 30px;
+    position: relative;
+
+}
+.slice .left{
+    width: 400px;
+    position: absolute;
+    left: 75px;
+    top: 150px;
+}
+
+.slice .left h2{
+    font-size: 80px;
+    color: #484845;
+}
+
+.left p{
+    margin-top: 20px;
+    text-align: justify;
+}
+.btn{
+    padding: 15px 55px;
+    background-color: #758dba;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+
+}
+
+.btn:hover{
+    color: #484845;
+    background-color: #94b3ec;
+}
+
+.slice .right{
+    position: absolute;
+    bottom: 100px;
+    right: 90px;
+}
+
+.hidden{
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    margin-right: 30px;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.hidden:hover{
+    color: #484845;
+}
+
+
+/* banner */
+.banner{
+    margin-top: 20px;
+}
+.banner__left{
+    width: 680px;
+    height: 590px;
+    margin-right: 20px;
+    float: left;
+    background-image: url(../img/banner_3.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.text__left{
+    font-size: 60px;
+    position: absolute;
+    left: 420px;
+    bottom: 75px;
+
+}
+
+.view__left{
+    position: absolute;
+    left: 540px;
+    bottom: 50px;
+    text-transform: uppercase;
+    color: #484845;
+}
+
+.banner__right{
+    width: 500px;
+    height: 700px;
+    float: left;
+    background-image: url(../img/banner_4.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.text__right{
+    position: absolute;
+    left: 70px;
+    bottom: 380px;
+    width: 150px;
+    font-size: 65px;
+    color: #484845;
+}
+
+.view__right{
+    position: absolute;
+    left: 75px;
+    bottom: 330px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/* content */
+#content__title{
+    margin-bottom: 20px;
+    margin-top: 15px;
+    font-size: 50px;
+
+}
+
+.content__layer1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content__layer1--a{
+    /* width: 285px; */
+    width: (100% / 4 - 100px);
+    margin-left: 20px;
+}
+
+.content__layer1--a:first-child{
+    margin-left: 0px;
+}
+
+.content__layer1--a img{
+    -webkit-transform: scale(1.0);
+       -moz-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+         -o-transform: scale(1.0);
+            transform: scale(1.0);
+}
+
+.content__layer1--a img:hover{
+    -webkit-transform: scale(0.7);
+       -moz-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+         -o-transform: scale(0.7);
+            transform: scale(0.7);
+}
+
+.content__img{
+    width: 285px;
+    object-fit: cover;
+}
+
+.content__layer2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name{
+    width: (100% / 4 - 100px);
+    margin-left: 20px;
+}
+
+.name:first-child{
+    margin-left: 0px;
+}
+
+.name__title{
+    width: 285px;
+    padding: 5px 0px;
+    color: #484845;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.price{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price__content{
+    width: (100% / 4 - 100px);
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+    width: 285px;
+    font-weight: bold;
+    color: #818773;
+}
+
+.price__content span{
+    font-size: 20px;
+}
+
+.price__content:first-child{
+    margin-left: 0px;
+}
+
+.buy{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buy__now{
+    width: 285px;
+    width: (100% / 4 - 100px);
+    margin-left: 20px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 15px 15px;
+    background-color: #758dba;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+}
+
+.buy__now:hover{
+    color: #484845;
+    background-color: #94b3ec;
+}
+
+.buy__now:first-child{
+    margin-left: 0px;
+}
+
+/* banner */
+.banner__dow{
+    margin-top: 30px;
+}
+
+#banner__left--dow{
+    width: 680px;
+    height: 350px;
+    margin-right: 20px;
+    float: left;
+    background-image: url(../img/banner_1.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.text__left--dow{
+    position: absolute;
+    left: 513px;
+    top: 90px;
+    font-size: 60px;
+}
+
+.view__left--dow{
+    position: absolute;
+    left: 517px;
+    bottom: 90px;
+    text-transform: uppercase;
+    color: #484845;
+}
+
+#banner__right--dow{
+    width: 500px;
+    height: 470px;
+    float: left;
+    background-image: url(../img/banner_2.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.text__right--dow{
+    position: absolute;
+    left: 369px;
+    top: 200px;
+    font-size: 60px;
+}
+
+.view__right--dow{
+    position: absolute;
+    left: 374px;
+    bottom: 100px;
+    text-transform: uppercase;
+    color: #484845;
+}
+
+/* footer */
+
+
+.about{
+    width: 400px;
+    float: left;
+}
+
+.about #footer__left--logo{
+    width: 150px;
+    height: 38px;
+    margin-right: 20px;
+    float: left;
+    margin-top: 10px;
+}
+
+.about #footer__right--title{
+    width: 150px;
+    color: #6c6666;
+    float: left;
+    margin-top: 10px;
+}
+
+.contact{
+    width: 300px;
+    float: left;
+}
+
+.contact #email{
+    margin-top: 10px;
+    margin-right: 20px;
+    float: left;
+    color: #696969;
+}
+
+.contact .email__span {
+    font-weight: bold;
+}
+
+.contact #tel{
+    margin-top: 10px;
+    margin-right: 20px;
+    float: left;
+    color: #696969;
+}
+
+.contact .tel_span{
+    font-weight: bold;
+}
+
+.link{
+    width: 500px;
+    float: left;
+}
+
+.link p{
+    margin-top: 35px;
+    color: #696969;
+}
+
+
+
+
+
+
+
+
+
+
+
